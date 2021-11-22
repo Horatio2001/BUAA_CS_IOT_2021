@@ -31,6 +31,7 @@ public class DeviceStatusUtil {
 
         String body = new String(rst.getBody(), "utf-8");
         JSONObject jsonObject = JSONObject.parseObject(body);
+        //System.out.println(jsonObject);
         String value = jsonObject.getJSONObject("deviceStatus").getString("value");
 
         double temperature = Double.parseDouble(value);
@@ -59,9 +60,9 @@ public class DeviceStatusUtil {
         JSONObject jsonObject = JSONObject.parseObject(body);
         String value = jsonObject.getJSONObject("deviceStatus").getString("value");
 
-        double temperature = Double.parseDouble(value);
+        double Humidity = Double.parseDouble(value);
 
         client.shutdown();
-        return temperature;
+        return Humidity;
     }
 }
