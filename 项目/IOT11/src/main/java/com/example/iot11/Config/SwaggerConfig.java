@@ -26,7 +26,7 @@ public class SwaggerConfig {
     }
 
     private ApiInfo apiInfo(){
-        Contact contact = new Contact("Horatio", "", "Horatio201@qq.com");
+        Contact contact = new Contact("Horatio", "", "11116666@qq.com");
         return new ApiInfo(
                 "接口界面",
                 "神奇的YDDZ写的IOT狗屎后端接口",
